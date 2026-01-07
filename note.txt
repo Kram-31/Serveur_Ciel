@@ -1,0 +1,21 @@
+####################################################
+
+APRES AVOIR GIT PULL OU GIT CLONE TU VAS DEVOIR
+---- CHANGER LES DROITS DES LIENS RENDU ET COURS 
+
+---- CREE LES USERS Etu_Ciel1 Etu_Ciel2
+	- avec scope /etu_ciel1 et 2
+
+voici les commande 
+
+sudo chown root:root dossier_classe/etu_ciel1
+sudo chmod 755 dossier_classe/etu_ciel1
+
+sudo chown 1000:1000 dossier_classe/Rendu_Global
+sudo chmod 755 dossier_classe/Rendu_Global
+
+sudo chown root:root dossier_classe/Ressources_Profs
+sudo chmod 755 dossier_classe/Ressources_Profs
+
+FAIRE CA POUR LES DOSSIER A METTRE DANS ETU_CIEL1 OU 2
+MAIS POUR QUE LES ELEVE NE SUPP PAS LE DOSSIER
