@@ -1,0 +1,14 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser
+    container_name: filebrowser_app
+    user: "1000:1000"
+    volumes:
+      - ./dossier_classe:/srv
+      - ./filebrowser.db:/database.db
+    networks:
+      - reseau_ciel
+
+networks:
+  reseau_ciel:
+    external: true
