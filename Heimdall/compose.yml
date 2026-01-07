@@ -1,0 +1,19 @@
+services:
+  heimdall:
+    image: lscr.io/linuxserver/heimdall:latest 
+    container_name: heimdall 
+    
+    environment:
+      - PUID=1000 
+      - PGID=1000
+      - TZ=Europe/Paris 
+      
+    volumes:
+      - ./config:/config       
+    networks:
+      - reseau_ciel 
+      
+    restart: unless-stopped 
+networks:
+  reseau_ciel:
+    external: true

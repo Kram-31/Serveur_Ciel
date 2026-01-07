@@ -1,0 +1,68 @@
+========================================================================
+   PROCÉDURE D'INSTALLATION & CONFIGURATION RÉSEAU (MÉTHODE A)
+   Classe : BTS CIEL - Serveur de Services (Cloud, DNS, Dashboard)
+   Objectif : Rendre 'ciel.lan' accessible à tous les élèves sans config PC
+========================================================================
+
+--- ÉTAPE 0 : PRÉREQUIS SUR LE SERVEUR ---
+[ ] Connaître l'IP FIXE du serveur de la classe.
+    Commande : ip a
+    -> Noter l'IP ici : 192.168.__.__  (On l'appellera IP_SERVEUR)
+
+[ ] Avoir installé tous les conteneurs (Nginx, AdGuard, Heimdall, Filebrowser).
+    (Se référer aux fichiers note.txt des dossiers si besoin).
+
+
+--- ÉTAPE 1 : CONFIGURATION INTERNE (ADGUARD) ---
+Objectif : Que le serveur sache qui est "ciel.lan".
+
+1. Connectez-vous à l'admin AdGuard : http://IP_SERVEUR/adguard/
+2. Allez dans : Filtres > Réécritures DNS.
+3. Cliquez sur "Ajouter une réécriture DNS".
+4. Remplir :
+   - Domaine : ciel.lan
+   - Réponse : IP_SERVEUR (ex: 192.168.1.50)
+5. Sauvegarder.
+
+
+--- ÉTAPE 2 : CONFIGURATION DU RÉSEAU (LA MÉTHODE A) ---
+Objectif : Forcer tous les PC de la classe à passer par notre serveur DNS.
+
+1. Accédez à l'interface d'administration du Routeur / Box de la classe.
+   (Souvent 192.168.1.1 ou 192.168.0.1 ou 10.x.x.x).
+   
+2. Cherchez la section "DHCP" ou "Réseau Local" (LAN).
+
+3. Repérez la ligne "Serveur DNS Primaire" (ou DNS 1).
+   - Il y a souvent l'IP du routeur ou 8.8.8.8 par défaut.
+   - REMPLACEZ par : IP_SERVEUR (ex: 192.168.1.50).
+
+4. (Facultatif) "Serveur DNS Secondaire" :
+   - Mettez 8.8.8.8 (Google) ou 1.1.1.1 (Cloudflare).
+   - Cela assure que si votre serveur plante, ils ont quand même internet (mais plus accès à ciel.lan).
+
+5. SAUVEGARDEZ les paramètres du routeur.
+
+
+--- ÉTAPE 3 : APPLICATION SUR LES POSTES ÉLÈVES ---
+Pour que les PC prennent en compte le changement de DNS, les élèves doivent renouveler leur bail DHCP.
+
+Option 1 (La plus simple) :
+- "Déconnectez-vous du Wi-Fi/Câble et rebranchez-vous."
+
+Option 2 (La méthode "Hacker") :
+- Ouvrir un terminal (CMD ou PowerShell).
+- Taper : ipconfig /release
+- Taper : ipconfig /renew
+
+
+--- ÉTAPE 4 : LE TEST DE LA VICTOIRE ---
+Sur le PC d'un élève (qui n'a RIEN configuré de spécial) :
+
+1. Ouvrir le navigateur.
+2. Taper : http://ciel.lan
+   -> Doit afficher HEIMDALL.
+3. Taper : http://ciel.lan/fichiers/
+   -> Doit afficher FILEBROWSER.
+
+FIN DE LA PROCÉDURE.

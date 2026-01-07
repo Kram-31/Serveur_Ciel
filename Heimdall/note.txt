@@ -1,0 +1,13 @@
+SERVICE : Heimdall
+ROLE : Tableau de Bord (Dashboard)
+DESCRIPTION : 
+Page d'accueil simple qui centralise les liens. Évite aux utilisateurs de retenir les URLs.
+C'est juste un site web statique "joli".
+
+CONFIGURATION :
+- Pas de base de données complexe, juste un dossier ./config.
+- Les boutons s'ajoutent manuellement via l'interface web.
+
+LIENS A CRÉER :
+- Cloud : http://ciel.lan/fichiers/
+- Admin DNS : http://ciel.lan/adguard/

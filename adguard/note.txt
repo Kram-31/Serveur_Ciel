@@ -1,0 +1,15 @@
+SERVICE : AdGuard Home
+ROLE : Serveur DNS & Bloqueur de Publicité
+DESCRIPTION : 
+1. Agit comme un "Annuaire" : Transforme "ciel.lan" en l'IP du serveur.
+2. Agit comme un "Filtre" : Si un appareil demande l'IP d'un site de pub, AdGuard ment et bloque la connexion.
+
+PORTS CRITIQUES (Sur le serveur réel) :
+- 53:53 (TCP/UDP) : Pour répondre aux requêtes DNS des clients.
+- 3000:3000 : Uniquement pour l'installation initiale.
+
+PROCEDURE D'INSTALLATION (Premier lancement) :
+1. Aller sur http://IP_SERVEUR:3000
+2. Configuration Interface Web : Choisir port 80 (car Nginx relaiera vers lui).
+3. Configuration DNS : Choisir port 53.
+4. Une fois fini, l'accès se fait via http://ciel.lan/adguard/

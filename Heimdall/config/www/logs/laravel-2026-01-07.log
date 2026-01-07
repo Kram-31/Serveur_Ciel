@@ -1,0 +1,138 @@
+[2026-01-07 22:24:50] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:24:51] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:24:51] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:24:51] local.DEBUG: Update of all apps triggered!  
+[2026-01-07 22:24:51] local.DEBUG: Update of all apps finished!  
+[2026-01-07 22:24:51] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:24:52] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:48:18] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:48:19] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:49:14] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:49:14] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:49:14] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:49:14] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:49:16] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:49:16] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:49:30] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:49:30] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:50:28] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:50:28] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:50:39] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:50:39] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:08] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:09] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:19] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:19] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:22] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:22] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:26] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:26] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:26] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:26] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:43] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:43] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:43] local.WARNING: Blocked access to private or reserved IPs. {"ip":"127.0.0.1","host":"localhost"} 
+[2026-01-07 22:58:46] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:46] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:46] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:46] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:47] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:47] local.DEBUG: Process Apps dispatched  
+[2026-01-07 22:58:47] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 22:58:47] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:20] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:20] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:20] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:20] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:33] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:33] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:36] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:36] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:46] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:46] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:48] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:48] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:48] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:48] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:51] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:51] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:51] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:51] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:55] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:55] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:55] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:55] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:57] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:57] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:59] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:59] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:59] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:59] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:00:59] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:00:59] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:01:45] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:01:45] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:01:45] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:01:45] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:01:54] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:01:54] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:03:18] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:03:18] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:03:19] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:03:19] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:03:19] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:03:19] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:03:32] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:03:32] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:04:27] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:04:28] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:04:28] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:04:28] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:04:33] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:04:33] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:04:51] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:04:51] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:04:55] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:04:55] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:06:56] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:06:56] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:06:57] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:06:57] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:06:57] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:06:57] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:06:59] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:06:59] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:07:11] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:07:11] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:07:28] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:07:28] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:10:44] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:10:44] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:10:44] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:10:44] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:10:49] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:10:49] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:10:51] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:10:51] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:10:52] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:10:52] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:10:52] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:10:52] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:12:21] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:12:21] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:12:21] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:12:21] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:12:25] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:12:25] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:13:47] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:13:47] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:13:47] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:13:47] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:13:56] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:13:56] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:17:20] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:17:20] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:17:20] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:17:20] local.DEBUG: Process Apps dispatched  
+[2026-01-07 23:17:27] local.DEBUG: SQLite Database Path: /app/www/database/app.sqlite  
+[2026-01-07 23:17:27] local.DEBUG: Process Apps dispatched  

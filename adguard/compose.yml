@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  adguard:
+    image: adguard/adguardhome:latest
+    container_name: adguard
+    restart: unless-stopped
+    
+    # Donne les droits d'admin réseau au conteneur (indispensable pour gérer le DHCP/DNS)
+    cap_add:
+      - NET_ADMIN
+    
+    networks:
+      - reseau_ciel 
+
+    ports:
+      # --- Ports DNS (LE CŒUR DU SYSTEME) ---
+      # Le port 53 est standard pour le DNS. TCP et UDP sont requis.
+      - "5353:53/tcp"
+      - "5353:53/udp"
+      
+      # --- Port d'installation ---
+      # On ouvre le 3000 juste pour faire la configuration initiale.
+      # Une fois configuré, on passera par Nginx sur le port 80 (interne).
+      - "3000:3000/tcp"
+
+    volumes:
+      - ./conf:/opt/adguardhome/conf
+      - ./work:/opt/adguardhome/work
+
+networks:
+  reseau_ciel:
+    external: true

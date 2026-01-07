@@ -1,54 +1,37 @@
-================================================================================
-                         MÉMO TECHNIQUE - SERVEUR CIEL
-================================================================================
+SERVICE : Nginx (Reverse Proxy)
+ROLE : Le "Chef d'Orchestre"
+DESCRIPTION : 
+C'est le portier du serveur. Il reçoit toutes les demandes (http://ciel.lan) sur le port 80 
+et les redirige vers le bon conteneur (Heimdall, AdGuard, etc.) en fonction de l'URL.
+Sans lui, il faudrait taper des ports bizarres (ex: :8080, :9000) pour chaque service.
 
-1. ARCHITECTURE GLOBALE
------------------------
-- Point d'entrée unique : Nginx (Port 80).
-- Application Fichiers  : FileBrowser (Isolé sur le réseau Docker).
-- Réseau Docker         : "reseau_ciel" (Doit être créé manuellement).
+CONFIGURATION REQUISE :
+1. Créer le réseau externe avant tout : docker network create reseau_ciel
+2. S'assurer que les conteneurs cibles (Heimdall, Filebrowser...) sont allumés AVANT de lancer Nginx.
 
-2. COMMANDES INDISPENSABLES
----------------------------
-- Créer le réseau (si erreur "network not found") :
-  docker network create reseau_ciel
+FICHIER nginx.conf (A mettre dans ./nginx.conf) :
+events { worker_connections 1024; }
+http {
+    server {
+        listen 80;
+        server_name ciel.lan;
 
-- Lancer/Mettre à jour FileBrowser :
-  cd /home/kram/Serveur_Ciel/FileBrowser
-  docker-compose up -d
+        # Accueil -> Heimdall
+        location / {
+            proxy_pass http://heimdall:80;
+        }
 
-- Lancer/Mettre à jour Nginx :
-  cd /home/kram/Serveur_Ciel/nginx
-  docker-compose up -d
+        # Fichiers -> Filebrowser
+        location /fichiers/ {
+            proxy_pass http://filebrowser:80/;
+            client_max_body_size 0; # Pour uploader des gros fichiers
+        }
 
-- Voir les logs (si ça plante) :
-  docker logs -f nginx_proxy
-  docker logs -f filebrowser_app
-
-3. CONFIGURATION NGINX (Points critiques)
------------------------------------------
-- Fichier : Serveur_Ciel/nginx/nginx.conf
-- "client_max_body_size 200M;" -> Augmenter si les élèves ne peuvent pas upload.
-- "proxy_read_timeout 300s;"   -> Augmenter si ça coupe pendant les gros transferts.
-- Si changement de config : Faire "docker-compose restart nginx".
-
-4. GESTION DES ÉLÈVES (FileBrowser)
------------------------------------
-- URL d'accès : http://[IP_DU_SERVEUR] (plus besoin du port :8082).
-- Comptes utilisateurs : À créer dans l'interface Web (Settings > Users).
-- Isolation :
-  Dans le profil de l'élève, définir le "Scope" sur "/etu_cielX".
-  Cela l'empêche de remonter à la racine et de voir les autres.
-
-5. SYSTÈME DE FICHIERS & LIENS SYMBOLIQUES
-------------------------------------------
-- Volume monté : ./dossier_classe :/srv
-- IMPORTANT : Ne jamais monter directement un sous-dossier (ex: /etu_ciel1)
-  dans Docker, sinon les liens symboliques (../Ressources_Profs) seront brisés.
-  FileBrowser doit voir la racine "dossier_classe" pour suivre les liens.
-
-6. DÉPANNAGE RAPIDE (YAML)
---------------------------
-Si erreur "mapping key 'networks' already defined" :
--> Vérifier l'indentation dans docker-compose.yml.
--> Le bloc "networks:" de la fin doit être collé tout à gauche (pas d'espace avant).
+        # Pubs/DNS -> AdGuard
+        location /adguard/ {
+            proxy_pass http://adguard:80/;
+            proxy_redirect / /adguard/;
+            proxy_cookie_path / /adguard/;
+        }
+    }
+}
