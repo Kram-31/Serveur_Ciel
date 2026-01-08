@@ -1,0 +1,28 @@
+# 🕶️ MODE MATRIX / CYBERPUNK POUR HEIMDALL
+
+Pour impressionner la classe, on va changer le fond blanc tristounet.
+
+## 1. Trouver l'image "Wow"
+Pas besoin de télécharger, on va utiliser des liens directs (URLs).
+
+Voici une sélection qui marche super bien :
+*   **Matrix Rain (Classique)** : `https://media.giphy.com/media/u0qtXhG4gYnLy/giphy.gif`
+*   **Cyberpunk City** : `https://media.giphy.com/media/10xc8tOpBwL0T6/giphy.gif`
+*   **Hacker Terminal** : `https://media.giphy.com/media/26tn33aiTi1jkl6VU/giphy.gif`
+
+## 2. Appliquer la config
+1.  Allez sur votre Heimdall : http://ciel.lan
+2.  Cliquez sur la **Roue dentée** (Settings) en bas à droite.
+3.  Allez dans **"Settings"**.
+4.  Option **"Background Image"** : Copiez-collez l'un des liens ci-dessus.
+5.  Option **"Background Overlay"** : Mettez `0.8` (Pour assombrir l'image et qu'on lise bien les boutons).
+6.  Cliquez sur **"Save"**.
+
+## 3. Rendre les boutons "Cyber"
+Pour que ça fasse encore plus pro, on enlève le fond des boutons.
+1.  Toujours dans Settings.
+2.  Cherchez une option "Custom CSS" (si dispo) ou jouez avec les couleurs.
+    *   *Note : Le simple changement de fond suffit généralement à faire son effet.*
+
+**Résultat :**
+Votre serveur n'est plus une page web, c'est un terminal de film de hacker.

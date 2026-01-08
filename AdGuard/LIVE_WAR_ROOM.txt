@@ -1,0 +1,25 @@
+# 🚨 MODE "WAR ROOM" - VISUALISATION CYBER
+
+Pour la démo au vidéoprojecteur, transformez AdGuard en écran de contrôle de sécurité.
+
+## 1. La Configuration Visuelle
+1.  Allez sur **http://adguard.ciel.lan**.
+2.  Cliquez sur **"Journal des requêtes"** (Query Log).
+3.  Cliquez sur le bouton **"Personnaliser les colonnes"** (si dispo) ou les filtres.
+
+## 2. Le Réglage "Action"
+Pour impressionner, on veut voir du ROUGE (les menaces).
+1.  Dans la barre de recherche du journal, tapez ou sélectionnez :
+    `RÉPONSE : BLOQUÉ` (ou "Blocked").
+    
+    *Alternative : Laissez tout défiler pour montrer la vitesse du trafic.*
+
+2.  Appuyez sur **F11** (Plein écran).
+3.  Zoomez un peu (**Ctrl + Molette**) pour que le texte soit gros et lisible au fond de la classe.
+
+## 3. Le Discours (Pour le Prof)
+"M'sieur, voici le flux réseau de la classe en temps réel.
+Chaque ligne que vous voyez est une requête DNS interceptée.
+Le serveur analyse et nettoie le trafic avant même qu'il n'atteigne les PC des élèves."
+
+> **Effet Whaou garanti** : Demandez à la classe d'aller sur un site bourré de pubs (ex: site de streaming ou speedtest). Le journal va s'affoler et défiler à toute vitesse en rouge.
