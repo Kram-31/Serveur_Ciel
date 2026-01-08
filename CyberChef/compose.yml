@@ -1,0 +1,13 @@
+services:
+  cyberchef:
+    image: mwalbeck/cyberchef:latest
+    container_name: cyberchef
+    restart: unless-stopped
+    ports:
+      - "8082:8080"
+    networks:
+      - reseau_ciel
+
+networks:
+  reseau_ciel:
+    external: true

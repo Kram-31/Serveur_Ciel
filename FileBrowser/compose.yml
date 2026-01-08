@@ -2,14 +2,17 @@ services:
   filebrowser:
     image: filebrowser/filebrowser:latest
     container_name: filebrowser
+    # On force la config via la commande pour être sûr que ça écrase la DB
+    command: --address 0.0.0.0 --baseurl /fichiers
     user: 1000:1000
     environment:
       - FB_DATABASE=/database.db
       - FB_ROOT=/srv
-      - FB_BASEURL=/fichiers
-      # ^^^ C'est LA ligne la plus importante pour Nginx
+      # - FB_BASEURL=/fichiers (Redondant avec la commande mais on laisse pour info)
     networks:
       - reseau_ciel
+    ports:
+      - "8080:80"
     volumes:
       - ./dossier_classe:/srv
       - ./filebrowser.db:/database.db

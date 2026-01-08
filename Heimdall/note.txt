@@ -1,13 +1,47 @@
-SERVICE : Heimdall
-ROLE : Tableau de Bord (Dashboard)
-DESCRIPTION : 
-Page d'accueil simple qui centralise les liens. Évite aux utilisateurs de retenir les URLs.
-C'est juste un site web statique "joli".
+PROCÉDURE D'INSTALLATION - HEIMDALL (DASHBOARD)
 
-CONFIGURATION :
-- Pas de base de données complexe, juste un dossier ./config.
-- Les boutons s'ajoutent manuellement via l'interface web.
+==================================================
+1. PRÉPARATION
+==================================================
+# 1. Créer le réseau Docker (si pas déjà fait)
+docker network create reseau_ciel
 
-LIENS A CRÉER :
-- Cloud : http://ciel.lan/fichiers/
-- Admin DNS : http://ciel.lan/adguard/
+==================================================
+2. LANCEMENT
+==================================================
+docker compose up -d
+
+==================================================
+3. ACCÈS & CONFIGURATION
+==================================================
+URL : http://IP_DU_LXC/ (Port 80 par défaut)
+
+Heimdall est votre page d'accueil. Vous devez configurez les boutons ("Applications") pour pointer vers vos autres services.
+
+Exemple de configuration des boutons :
+
+1. FILEBROWSER :
+   - URL : http://IP_DU_LXC:8080/fichiers/
+   - Description : Gestionnaire de Fichiers
+
+2. ADGUARD HOME :
+   - URL : http://IP_DU_LXC:3000/
+   - Description : Administration DNS
+
+3. GLANCES :
+   - URL : http://IP_DU_LXC:61208/
+   - Description : Monitoring Serveur
+
+4. IT-TOOLS :
+   - URL : http://tools.ciel.lan (ou port 8081)
+   - Description : Boîte à outils
+
+5. PORTAINER :
+   - URL : http://admin.ciel.lan (ou port 9000)
+   - Description : Gestion Docker
+
+6. CYBERCHEF :
+   - URL : http://cyber.ciel.lan (ou port 8082)
+   - Description : Outils Crypto
+
+C'est simple, visuel, et ça fait très "Pro" pour le prof.

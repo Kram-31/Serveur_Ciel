@@ -1,0 +1,26 @@
+PROCÉDURE D'INSTALLATION - IT-TOOLS (BOITE A OUTILS WEB)
+
+==================================================
+1. PRÉPARATION
+==================================================
+# 1. Créer le réseau Docker (si pas déjà fait)
+docker network create reseau_ciel
+
+==================================================
+2. LANCEMENT
+==================================================
+docker compose up -d
+
+==================================================
+3. ACCÈS
+==================================================
+URL : http://IP_DU_LXC:8081
+
+C'est une boîte à outils "couteau suisse" pour informaticiens :
+- Convertisseur JSON <> YAML
+- Calculateur CIDR / IP
+- Générateur de mots de passe
+- Decrypteur de hash
+- Etc...
+
+Très utile pour les TP de réseau !
