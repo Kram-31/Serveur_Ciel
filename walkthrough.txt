@@ -16,7 +16,6 @@ Un serveur centralisé sous Docker, protégé par un Reverse Proxy (Nginx) et un
 | **AdGuard** | `http://adguard.ciel.lan` | `:3000` | DNS & Pare-feu |
 | **Portainer** | `http://admin.ciel.lan` | `:9000` | Gestion Docker |
 | **Glances** | `http://monitor.ciel.lan` | `:61208` | Monitoring (Ressources) |
-| **CyberChef** | `http://cyber.ciel.lan` | `:8082` | Outils Crypto/Décodage |
 | **IT-Tools** | `http://tools.ciel.lan` | `:8081` | Outils Réseau |
 
 ## 3. Identifiants

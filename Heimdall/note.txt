@@ -40,8 +40,6 @@ Exemple de configuration des boutons :
    - URL : http://admin.ciel.lan (ou port 9000)
    - Description : Gestion Docker
 
-6. CYBERCHEF :
-   - URL : http://cyber.ciel.lan (ou port 8082)
-   - Description : Outils Crypto
+
 
 C'est simple, visuel, et ça fait très "Pro" pour le prof.

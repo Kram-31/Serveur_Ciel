@@ -22,7 +22,7 @@ Une fois sur **http://ciel.lan**, vous verrez des icônes pour chaque outil :
 | :--- | :--- | :--- |
 | 📂 | **Fichiers** | C'est comme un Google Drive. Déposez vos TP et travaux ici. |
 | 🛠️ | **Outils Réseau** | Pour calculer des masques IP, convertir des données, etc. |
-| 🕵️ | **CyberChef** | La "boîte magique" pour décoder des messages secrets ou analyser des fichiers. |
+
 | 📊 | **Monitoring** | Juste pour voir si le serveur chauffe (comme le Tableau de Bord d'une voiture). |
 
 ---

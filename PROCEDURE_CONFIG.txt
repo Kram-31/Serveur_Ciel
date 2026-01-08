@@ -32,7 +32,7 @@ URL : http://ciel.lan (ou http://IP:8085)
    - Nom: FileBrowser | URL: http://files.ciel.lan
    - Nom: Portainer   | URL: http://admin.ciel.lan
    - Nom: Glances     | URL: http://monitor.ciel.lan
-   - Nom: CyberChef   | URL: http://cyber.ciel.lan
+
    - Nom: IT-Tools    | URL: http://tools.ciel.lan
 3. Cliquez sur "Save".
 4. Puis cliquez sur l'Épingle sur l'accueil pour les fixer si besoin.

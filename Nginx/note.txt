@@ -37,6 +37,6 @@ Les élèves ne tapent plus de ports !
 - Monitoring : http://monitor.ciel.lan
 - Outils : http://tools.ciel.lan
 - Docker Admin : http://admin.ciel.lan
-- Cyber Chef : http://cyber.ciel.lan
+
 
 C'est propre, c'est sécurisé, c'est Cyber.
