@@ -3,16 +3,15 @@ services:
     image: filebrowser/filebrowser:latest
     container_name: filebrowser
     # On force la config via la commande pour être sûr que ça écrase la DB
-    command: --address 0.0.0.0 --baseurl /fichiers
+    command: --address 0.0.0.0
     user: 1000:1000
     environment:
       - FB_DATABASE=/database.db
       - FB_ROOT=/srv
-      # - FB_BASEURL=/fichiers (Redondant avec la commande mais on laisse pour info)
     networks:
       - reseau_ciel
     ports:
-      - "8080:80"
+      - "8080:8080"
     volumes:
       - ./dossier_classe:/srv
       - ./filebrowser.db:/database.db
