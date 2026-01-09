@@ -39,3 +39,8 @@ adguard.ciel.lan {
     # AdGuard utilise le port 80 pour l'interface web à l'intérieur du conteneur
     reverse_proxy adguard:3000
 }
+# --- VS CODE SERVER ---
+code.ciel.lan {
+    tls internal
+    reverse_proxy code:8443
+}

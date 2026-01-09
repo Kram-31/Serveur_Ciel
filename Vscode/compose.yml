@@ -1,0 +1,25 @@
+services:
+  code:
+    build: .
+    container_name: code-server
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+      - PASSWORD=ciel
+      - SUDO_PASSWORD=admin
+      - DEFAULT_WORKSPACE=/config/workspace
+    volumes:
+      - ./config:/config
+      # On remonte d'un cran pour atteindre le dossier FileBrowser
+      - ../FileBrowser/srv:/config/workspace
+    restart: unless-stopped
+    ports:
+      - 8443:8443
+    networks:
+      - reseau_ciel
+
+# On déclare que ce réseau existe déjà (créé par votre stack principale)
+networks:
+  reseau_ciel:
+    external: true
