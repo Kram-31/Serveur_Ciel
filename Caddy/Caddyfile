@@ -28,7 +28,7 @@ tools.ciel.lan {
 }
 
 # --- PORTAINER ---
-portainer.mciel.lan {
+portainer.ciel.lan {
     tls internal
     reverse_proxy portainer:9000
 }
@@ -37,5 +37,5 @@ portainer.mciel.lan {
 adguard.ciel.lan {
     tls internal
     # AdGuard utilise le port 80 pour l'interface web à l'intérieur du conteneur
-    reverse_proxy adguard:80
+    reverse_proxy adguard:3000
 }
